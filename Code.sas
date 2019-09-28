@@ -1,10 +1,10 @@
 dm 'clear log'; dm 'clear output'; dm 'odsresults; clear'; /* clear log and output */
 
-libname data "E:\pcg180000";
+libname data "E:\himaja";
 title;
 
 proc import out = data.vehicles_raw
-	 datafile = "E:\pcg180000\craigslistVehiclesFull.csv"
+	 datafile = "E:\himaja\craigslistVehiclesFull.csv"
 	 dbms = tab replace;
 	 delimiter = ",";
 	 getnames = yes;
